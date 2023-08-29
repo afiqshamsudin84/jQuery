@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+
+<style>
+    body{
+        background-color: rgb(191, 224, 243);
+    }
+   #list{
+    background-color: aliceblue;
+    display:none;
+   }
+   a{
+    text-decoration: none;
+   }
+   #about, #myCode{
+    display:none;
+   }
+   h1{
+    color:rgb(10, 10, 190);
+   }
+   #box1{
+    background-color: blueviolet;
+    width:100px;
+    height:100px;
+    
+   }
+   .btn{
+    width:100px;
+    background-color: rgb(27, 99, 99);
+    color: azure;
+   }
+   .card{
+    width:400px;
+    height:200px;
+   }
+</style>
+
+</head>
+<body>
+<!--Menu start-->
+<div class="container-fluid bg-info p-2">
+    <nav id="menu"><a style="text-decoration: none; color:black" href="#"><strong>Menu</strong></a></nav>
+</div>
+<div>
+    <div id="list" style="padding-left: 15px;">
+        <p>
+            <a class="menuList1" href="#">Home</a><br>
+            <a class="menuList2" href="#">My Playground</a><br>
+            <a class="menuList3" href="#">My Code</a>
+        </p>
+    </div>
+</div>
+<!--Menu end-->
+<!--Home component-->
+<div id="home" default>
+    <div class="container-fluid card mx-auto mt-5 text-center" style="width:400px">
+        <h1>Home</h1>
+        <p>This is to showcase the jQuery function.</p>
+        <p>let's try <a class="menuList2" href="#">My Playground</a></p>
+    </div>
+</div>
+<!--My Playground component-->
+<div id="about" class="text-center mt-3">
+    <h1 >This is My Playground</h1>
+    <div style="height:500px;width:100%;border:solid;background-color: rgb(137, 202, 233);">
+        <div id="box1"></div>
+    </div>
+    <div class="container-fluid align-items-center mx-auto p-3">
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn" id="up">Up</button>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+                <button class="btn" id="left">Left</button>
+            </div>
+            <div class="col">
+                <button class="btn" id="right" >Right</button>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn"id="down">Down</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!--My Code component-->
+<div id="myCode">
+    <h1>My Code</h1>
+    <div class="container bg-black" style="border-radius: 10px; color:aliceblue">
+        <pre><code>
+            <xmp>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+
+<style>
+   #list{
+    background-color: aliceblue;
+    display:none;
+   }
+   a{
+    text-decoration: none;
+   }
+   #myPlayground, #myCode{
+    display:none;
+   }
+   h1{
+    color:rgb(10, 10, 190);
+   }
+   #box1{
+    background-color: blueviolet;
+    width:100px;
+    height:100px;
+    
+   }
+   .btn{
+    width:100px;
+    background-color: rgb(27, 99, 99);
+    color: azure;
+   }
+   .card{
+    width:400px;
+    height:200px;
+   }
+</style>
+
+</head>
+<body>
+    
+<div class="container-fluid bg-info">
+    <nav id="menu"><a style="text-decoration: none; color:black;" href="#"><strong>Menu</strong></a></nav>
+</div>
+<div>
+    <div id="list" style="padding-left: 15px;">
+        <p>
+            <a class="menuList1" href="#">Home</a><br>
+            <a class="menuList2" href="#">My Playground</a><br>
+            <a class="menuList3" href="#">My Code</a>
+        </p>
+    </div>
+</div>
+
+<div id="home" default>
+    <div class="container-fluid card mx-auto mt-5 text-center" style="width:400px">
+        <h1>Home</h1>
+        <p>This is to showcase the jQuery function.</p>
+        <p>let's try <a class="menuList2" href="#">My Playground</a></p>
+    </div>
+</div>
+
+<div id="myPlayground" class="text-center mt-3">
+    <h1 >This is My Playground</h1>
+    <div class="container" style="height:500px;width:100%;border:solid;">
+        <div id="box1"></div>
+    </div>
+    <div class="card align-items-center mx-auto p-3">
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn" id="up">Up</button>
+            </div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">
+                <button class="btn" id="left">Left</button>
+            </div>
+            <div class="col">
+                <button class="btn" id="right" >Right</button>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">
+                <button class="btn"id="down">Down</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<div id="myCode">
+    <h1>My Code</h1>
+    <div class="container">
+        
+    </div>
+</div>
+
+</body>
+<script>
+    $('document').ready(function () {
+
+        $('#menu').click(function () {
+
+            $('#list').toggle(500);
+        });
+
+        $('#menu').focusout(function () {
+            $('#list').hide(500);
+        });
+
+
+
+        $('.menuList1').click(function () {
+            $('#home').show();
+            $('#myPlayground').hide();
+            $('#myCode').hide();
+
+        });
+        $('.menuList2').click(function () {
+            $('#myPlayground').show();
+            $('#home').hide();
+            $('#myCode').hide();
+
+        });
+        $('.menuList3').click(function () {
+            $('#myCode').show();
+            $('#myPlayground').hide();
+            $('#home').hide();
+
+        });
+
+        $('#left').click(function () {
+            $('#box1').css('margin-left', '-=50px');
+        });
+        $('#right').click(function () {
+            $('#box1').css('margin-left', '+=50px');
+        });
+        $('#up').click(function () {
+            $('#box1').css('margin-top', '-=50px');
+        });
+        $('#down').click(function () {
+            $('#box1').css('margin-top', '+=50px');
+        });
+
+    });
+</script>
+</html>
+            </xmp>
+        </code></pre>
+    </div>
+</div>
+
+</body>
+<script>
+    $('document').ready(function(){
+        //Toggle menu
+        $('#menu').click(function(){
+
+            $('#list').toggle(500);
+        });
+        //out of focus menu
+        $('#menu').focusout(function(){
+            $('#list').hide(500);
+        });
+            
+        
+       //show home
+        $('.menuList1').click(function(){
+            $('#home').show();
+            $('#about').hide();
+            $('#myCode').hide();
+         
+        });
+        //show about
+        $('.menuList2').click(function(){
+            $('#about').show();
+            $('#home').hide();
+            $('#myCode').hide();
+          
+        });
+        $('.menuList3').click(function(){
+            $('#myCode').show();
+            $('#about').hide();
+            $('#home').hide();
+          
+        });
+
+        $('#left').click(function(){
+            $('#box1').css('margin-left','-=50px');
+        });
+        $('#right').click(function(){
+            $('#box1').css('margin-left','+=50px');
+        });
+        $('#up').click(function(){
+            $('#box1').css('margin-top','-=50px');
+        });
+        $('#down').click(function(){
+            $('#box1').css('margin-top','+=50px');
+        });
+
+
+    });
+</script>
+</html>
